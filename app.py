@@ -7,8 +7,7 @@ from sms_notifications import SMSNotifications
 
 def main():
     notifications = SMSNotifications(
-        #os.getenv("ACCOUNT_SID"), os.getenv("AUTH_TOKEN"), os.getenv("FROM_NUMBER")
-        'AC731c76d307f8db3f1d30a04674859ae2', '46cf2b2ecc4fa45b0523def198779efc', '+32460238036'
+        os.getenv("ACCOUNT_SID"), os.getenv("AUTH_TOKEN"), os.getenv("FROM_NUMBER")
     )
     steam_scraper = SteamSpecialsScraper("https://store.steampowered.com/specials")
     
